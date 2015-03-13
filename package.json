@@ -1,0 +1,29 @@
+{
+  "name": "fuller-autoprefixer",
+  "version": "0.3.0",
+  "license": "BSD",
+  "description": "Fuller tool: css autoprefixer tool",
+  "keywords": [
+    "js",
+    "fuller",
+    "build",
+    "autoprefixer",
+    "css",
+    "automation"
+  ],
+  "author": "Alexey Novikov (http://2dubs.com)",
+  "preferGlobal": true,
+  "private": false,
+  "dependencies": {
+    "through2": "^0.6.3",
+    "autoprefixer-core": "^5.1.0"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fullerjs/fuller-autoprefixer.git"
+  },
+  "main": "./index"
+}
