@@ -12,10 +12,7 @@
 		"automation"
 	],
 	"author": "Alexey Novikov (http://2dubs.com)",
-	"preferGlobal": true,
-	"private": false,
 	"dependencies": {
-		"through2": "^0.6.3",
 		"autoprefixer-core": "^5.1.0"
 	},
 	"engines": {
