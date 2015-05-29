@@ -13,6 +13,7 @@
 	],
 	"author": "Alexey Novikov (http://2dubs.com)",
 	"dependencies": {
+		"postcss": "^4.1.0",
 		"autoprefixer-core": "^5.1.0"
 	},
 	"engines": {
