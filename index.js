@@ -1,19 +1,19 @@
-"use strict";
-let autoprefixer = require("autoprefixer-core");
-let postcss = require("postcss");
+'use strict';
+let autoprefixer = require('autoprefixer');
+let postcss = require('postcss');
 
 module.exports = function(f, mat, options, next) {
-	mat.getContent(function(content) {
-		let plugin = autoprefixer({browsers: options.browsers || "last 2 versions"});
+  mat.getContent(function(content) {
+    let plugin = autoprefixer({ browsers: options.browsers || 'last 2 versions' });
 
-		postcss([plugin])
-			.process( content.toString() )
-			.then(function(result) {
-				result.warnings().forEach(function (warn) {
-					f.log(warn.toString());
-				});
+    postcss([ plugin ])
+      .process( content.toString() )
+      .then( function(result) {
+        result.warnings().forEach( function(warn) {
+          f.log(warn.toString());
+        });
 
-				next(null, mat.setContent(result.css));
-			});
-	});
+        next(null, mat.setContent(result.css));
+      });
+  });
 };
