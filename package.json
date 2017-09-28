@@ -13,11 +13,8 @@
   ],
   "author": "Alexey Novikov (http://2dubs.com)",
   "dependencies": {
-    "autoprefixer": "^6.0.0",
-    "postcss": "^5.0.9"
-  },
-  "engines": {
-    "node": "^4.0.0"
+    "autoprefixer": "^7.1.4",
+    "postcss": "^6.0.12"
   },
   "repository": {
     "type": "git",
